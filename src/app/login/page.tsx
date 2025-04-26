@@ -16,7 +16,6 @@ interface LoginInput {
 const LoginPage: React.FC = () => {
     const [modalTitle, setModalTitle] = useState<string>('');
     const router = useRouter();
-    console.log(router)
     const { fetchUser } = useAuth();
 
     const [modalMessage, setModalMessage] = useState<string>('');
